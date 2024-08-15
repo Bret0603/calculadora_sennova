@@ -5,15 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Prueba</title>
+    <title>Calculadora</title>
   </head>
   <body>
-    <header>Cabecera</header>
+    <header>
+      <img src="img/gics.png" alt="logo" class="header-image">
+      <h1>Calculadora</h1>
+    </header>
     <main>
-      Cuerpo 123
-      <button onclick="mostrarMensaje()">Presiona aquí</button>
+      <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons-wrapper">
+        <div class="buttons">
+        <button class="btn" onclick="appendNumber('7')">7</button>
+        <button class="btn" onclick="appendNumber('8')">8</button>
+        <button class="btn" onclick="appendNumber('9')">9</button>
+        <button class="btn btn-operation" onclick="setOperation('+')">+</button>
+        
+        <button class="btn" onclick="appendNumber('4')">4</button>
+        <button class="btn" onclick="appendNumber('5')">5</button>
+        <button class="btn" onclick="appendNumber('6')">6</button>
+        <button class="btn btn-operation" onclick="setOperation('-')">-</button>
+        
+        <button class="btn" onclick="appendNumber('1')">1</button>
+        <button class="btn" onclick="appendNumber('2')">2</button>
+        <button class="btn" onclick="appendNumber('3')">3</button>
+        <button class="btn btn-operation" onclick="setOperation('*')">*</button>
+        
+        <button class="btn btn-reset" onclick="resetDisplay()">C</button>
+        <button class="btn" onclick="appendNumber('0')">0</button>
+        <button class="btn btn-result" onclick="calculate()">=</button>
+        <button class= "btn btn-operation" onclick="setOperation('/')">/</button>
+        <br /> <br />
+        <br />  
+        <br/>
+        <button class="btn" onclick="appendNumber('.')">.</button>
+        
+      </div>
+    </div>
+  </div>
     </main>
-    <footer>Pie de página</footer>
-    <script src="javascript/script.js"></script>
-  </body>
+    <footer>
+      <img src="img>sennova.png/" alt="logo" class="header-image">        
+        <p>Centro de Electricidad, Electrónica y Telecomunicaciones.  Cra. 30 #17B-25Sur, Bogotá</p>
+        <p>Bret Milton Sierra Royero</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <script src="javascript/calculator.js"></script>
+  </divclass="calculator">
 </html>
