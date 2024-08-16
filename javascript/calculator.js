@@ -4,7 +4,24 @@ let previousInput = '';
 
 
 function appendNumber(number) {
-    currentInput += number;
+    if (number === '.') {
+       
+        if (currentInput.includes('.')) return; 
+        if (currentInput === '') {
+            currentInput = '0.';
+        } else {
+           
+            currentInput += '.';
+        }
+    } else {
+        
+        if (currentInput === '0' && number !== '.') {
+            currentInput = number;
+        } else {
+           
+            currentInput += number;
+        }
+    }
     updateDisplay();
 }
 
@@ -62,6 +79,8 @@ function clearDisplay() {
     operation = '';
     updateDisplay();
 }
+
+
 function resetDisplay() {
     currentInput = '0'; 
     updateDisplay(); 

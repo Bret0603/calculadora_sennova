@@ -21,8 +21,9 @@ header {
 
 
 .header-image{
-    max-width: 80px;
+    max-width: 120px;
     height: auto;
+    background-color: white;
 
 }
 
@@ -84,18 +85,36 @@ button.btn {
     background-color: red;
     color: whitesmoke;
 }
-footer{
+footer {
     height: 130px;
-    width: auto;
+    width: 100%;
     color: white;
     background-color: #39A136;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     margin: 0;
-    text-align: center;
     box-sizing: border-box;
+    position: relative; 
+    text-align: center;
 }
 
+.footer-content {
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.footer-image1 {
+    max-width: 300px; 
+    height: auto;
+    float: left;
+    margin-right: 20px; 
+}
+
+.footer-image {
+    max-width: 200px; 
+    height: auto; 
+    float: right; 
+    margin-left: 20px; 
+}
 
 
