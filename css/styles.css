@@ -9,12 +9,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20px;
-    width:auto;
+    height: 80px;
     color:white;
     background-color: #39A136;
-    padding:20px;
-    margin:20px;
     text-align: center;
 
 }
@@ -24,6 +21,8 @@ header {
     max-width: 120px;
     height: auto;
     background-color: white;
+    margin:50px;
+
 
 }
 
@@ -86,7 +85,7 @@ button.btn {
     color: whitesmoke;
 }
 footer {
-    height: 130px;
+    height: 120px;
     width: 100%;
     color: white;
     background-color: #39A136;
@@ -103,18 +102,21 @@ footer {
     vertical-align: middle;
 }
 
-.footer-image1 {
+.footer-imageceet {
     max-width: 300px; 
     height: auto;
     float: left;
-    margin-right: 20px; 
+    margin: 20px; 
 }
 
-.footer-image {
+.footer-imagesennova{
     max-width: 200px; 
     height: auto; 
     float: right; 
     margin-left: 20px; 
 }
 
+[class*="col-"] {
+    width: 100%;
+}
 
